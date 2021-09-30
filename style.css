@@ -1,0 +1,283 @@
+body {
+    font-family: Roboto;
+    font-size: 16px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 160px 0 160px;
+    border-bottom: 1px solid #111111;
+    height: 68px;
+}
+
+.header__logo {
+    flex-grow: 1;
+}
+
+.header__menu {
+    flex-grow: 3;
+}
+
+.header__menu ul li {
+    display: inline;
+}
+
+.header__menu ul li a{
+    display: inline-block;
+    border-left: 1px solid #111111;
+    color: #111111;
+    padding: 26px 50px 26px 20px;
+}
+
+.header__link a{
+    color: #fff;
+    background: #111111;
+    padding: 25px 50px 25px 50px;
+    transition: .2s;
+}
+
+.header__link a:hover{
+    color: #111111;
+    background: none;
+}
+
+.login {
+    border: 1px solid #111111;
+    width: 386px;
+    padding: 80px 50px 50px 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    position: relative;
+    background: #ffffff;
+}
+
+.login__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login__form input[type="text"], [type="password"] {
+    border: none;
+    border-bottom: 1px solid #E8E8E8;
+    color: #111111;
+    outline: 0;
+    outline-offset: 0;
+    margin-top: 30px;
+    padding-left: 20px;
+    padding-bottom: 16px;
+}
+
+.login__form input[type="submit"]{
+    border: none;
+    color: #ffffff;
+    background: #111111;
+    margin-top: 40px;
+    height: 68px;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.login__form input[type="submit"]:hover{
+    color: #111111;
+    background: #ffffff;
+    transition: .2s;
+    border: 1px solid #111111;
+}
+
+.login__form a{
+    text-align: right;
+    margin-top: 15px;
+    color: #111111;
+}
+
+.error {
+    margin-top: 5px;
+    color: #ED2224;
+}
+
+.caps {
+    text-transform: uppercase;
+}
+
+.position {
+    color: #B8B8B8;
+}
+
+.bgimg {
+    display: block;
+    margin: -600px auto 0px;
+    position: absolute;
+    z-index: -1;
+}
+
+.employees {
+    display: flex;
+    flex-direction: row;
+    margin-top: 150px;
+}
+
+.title {
+    flex-grow: 1;
+    text-align: right;
+    padding: 0px 15px 0px 0px;
+}
+
+.list-employees {
+    border: 1px solid #111111;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 3;
+    padding: 50px 0 30px 70px;
+}
+
+.list-employees__void {
+    flex-grow: 1;
+}
+
+.list-employees__employ-link {
+    display: flex;
+    align-items: center;
+}
+
+.list-employees__container {
+    border-bottom: 1px solid #111111;
+    padding-bottom: 10px;
+    padding-top: 25px;
+}
+
+.list-employees__arrow {
+    width: 35px;
+    height: 35px;
+    background-image: url("img/arrow.svg");
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.list-employees__name {
+    margin-left: 15px;
+    color: #111111;
+}
+
+.list-employees__position {
+    margin-left: 20px;
+    color: #B8B8B8;
+}
+
+.list-employees__hidden {
+    margin-top: 35px;
+    display: none;
+    max-width: 800px;
+    margin-left: 100px;
+}
+
+.list-employees__hidden-active {
+    margin-top: 35px;
+    display: block;
+    max-width: 800px;
+}
+
+.list-employees__done {
+    margin-top: 30px;
+}
+
+.list-employees__done ul li {
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+.list-employees__not {
+    margin-top: 30px;
+}
+
+.list-employees__not ul li {
+    margin-top: 5px;
+    margin-left: 20px;
+}
+.reg a {
+    color: #fff;
+    background: #111111;
+    padding: 25px 50px 25px 50px;
+    transition: .2s;
+    display: inline-block;
+    margin-top: 50px;
+    border: 1px solid #111111;
+    cursor: pointer;
+}
+
+.reg a:hover{
+    color: #111111;
+    background: none;
+    border: 1px solid #111111;
+}
+
+.popupinput {
+    flex-direction: row;
+    display: none;
+}
+
+.popupinput-active {
+    flex-direction: row;
+    display: block;
+    max-width: 500px;
+}
+
+.popupinput input{
+    height: 45px;
+    margin-top: 10px;
+    padding-left: 25px;
+}
+
+.popupinput select {
+    height: 45px;
+    margin-top: 10px;
+}
+
+.popupinput input[type='submit'] {
+    height: 68px;
+    margin-top: 10px;
+    color: #ffffff;
+    background: #111111;
+    cursor: pointer;
+    border: solid 1px #111111;
+    transition: .2s;
+}
+
+.popupinput input[type='submit']:hover {
+    background: #ffffff;
+    color: #111111;
+    transition: .2s;
+}
+
+.inputform {
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.tasks {
+    display: flex;
+    flex-direction: row;
+    margin-top: 150px;
+    border: solid 1px #111111;
+    padding: 100px 25px 50px 25px;
+    flex-grow: 1;
+}
+
+.done {
+    flex-grow: 1;
+    margin-left: 50px;
+}
+
+.not {
+    flex-grow: 1;
+}
+
+.done ul li, .not ul li {
+    margin-top: 15px;
+    margin-bottom: 5px;
+
+}
